@@ -8,6 +8,7 @@ body {
 }
 :root {
   --font: sans-serif;
+  --whitecolor: white;
 }
 
 .main {
@@ -53,7 +54,7 @@ nav {
   margin-right: 6px;
   background: black;
   opacity: 0.9;
-  color: white;
+  color: var(--whitecolor);
 }
 
 .language button {
@@ -61,7 +62,7 @@ nav {
   height: 5vh;
   width: 6vw;
   border-radius: 10px;
-  color: white;
+  color: var(--whitecolor);
   position: relative;
   z-index: 10;
   border: none;
@@ -80,7 +81,7 @@ nav {
 .content1 h1 {
   font-size: 68px;
   text-align: center;
-  color: white;
+  color: var(--whitecolor);
   font-weight: 800;
   font-family: var(--font);
   font-style: normal;
@@ -88,7 +89,7 @@ nav {
 }
 
 .content1 h3 {
-  color: white;
+  color: var(--whitecolor);
   font-size: 25px;
 
   font-family: var(--font);
@@ -98,7 +99,7 @@ nav {
 .content2 {
   margin: auto;
   width: 50vw;
-  height: 15vh;
+  height: 10vh;
   top: 5%;
   display: flex;
   justify-content: center;
@@ -109,18 +110,55 @@ nav {
   font-family: var(--font);
   font-size: 22px;
   font-weight: 200;
-  color: white;
+  color: var(--whitecolor);
   letter-spacing: 1px;
   text-align: center;
 }
 
-.curve {
+/* .curve {
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
- border: 3px solid rgb(192, 8, 39); /* Adjust curve depth */
+ border: 3px solid rgb(192, 8, 39); Adjust curve depth
  box-shadow: 5px 5px 10px 15px blue ;
+} */
+
+.email {
+  width: 100%;
+  position: inherit;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+
+}
+
+#email{
+  background: none;
+  border: 1px solid grey;
+  padding-left: 15vw;
+  padding-top: 4vh;
+  color: rgb(97, 94, 94);
+  font-family: var(--font);
+  font-size: 22px;
+  font-weight: 200;
+  border-radius: 4px;
   
+
+}
+
+.get-started{
+  position: inherit;
+  width: 15vw;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: red;
+  border: none;
+  color: var(--whitecolor);
+  font-family: var(--font);
+  font-size: 25px;
+  font-weight: 800;
+
 }
