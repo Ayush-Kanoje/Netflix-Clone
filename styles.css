@@ -1,149 +1,126 @@
-*{
- margin: 0;
- padding: 0;
-
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
-:root{
-    --font:  sans-serif;
-}
-
-.main{
-    height: 90vh;
-    width: 100%;
-    background: url(assets/images/netflix-bg.jpg);
-   position: relative;
+:root {
+  --font: sans-serif;
 }
 
-.main .box{
-    width: 100%;
-    height: 90vh;
-    position: absolute;
-    background-color: black;
-     opacity: 0.8;
-  
+.main {
+  height: 90vh;
+  width: 100%;
+  background: url(assets/images/netflix-bg.jpg);
+  position: relative;
 }
 
+.main .box {
+  width: 100%;
+  height: 90vh;
+  position: absolute;
+  background-color: black;
+  opacity: 0.8;
+}
 
-
-nav{
+nav {
   width: 100%;
   margin-top: 25px;
- position: absolute;
+  position: absolute;
   display: inline-flex;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
   gap: 28vw;
-
-
 }
 
-.netflix-logo img{
-    height: 6vh;
-    position: relative;
-    z-index: 20;
-    
+.netflix-logo img {
+  height: 6vh;
+  position: relative;
+  z-index: 20;
 }
 
-
-.language #language{
-    height: 5vh;
-    width: 8vw;
-    padding-left: 13px;
-    border-radius: 10px;
-    position: relative;
-    z-index: 10;
-    font-size: 22px;
-    border: 1px solid grey;
-    margin-right:6px ;
-    background: black;
-    opacity: 0.9;
-    color: white;
-    
+.language #language {
+  height: 5vh;
+  width: 8vw;
+  padding-left: 13px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 10;
+  font-size: 22px;
+  border: 1px solid grey;
+  margin-right: 6px;
+  background: black;
+  opacity: 0.9;
+  color: white;
 }
 
-.language button{
-    background-color: red;
-    height: 5vh;
-    width: 6vw;
-    border-radius: 10px;
-    color: white;
-    position: relative;
-    z-index: 10;
-    border: none;
-   
-
+.language button {
+  background-color: red;
+  height: 5vh;
+  width: 6vw;
+  border-radius: 10px;
+  color: white;
+  position: relative;
+  z-index: 10;
+  border: none;
 }
 
 .content1 {
-    margin: auto;
-    width: 50vw;
-    height: 24vh;
-    top: 22%;
-    display: flex;
-    justify-content: center;
-    position: inherit;
-    z-index: 10;
-   
+  margin: auto;
+  width: 50vw;
+  height: 24vh;
+  top: 22%;
+  display: flex;
+  justify-content: center;
+  position: inherit;
+  z-index: 10;
 }
-.content1 h1{
-    font-size: 68px;
-    text-align: center;
-    color: white;
-    font-weight: 800;
-    font-family: var(--font);
-   font-style: normal;  
-   padding: 0;  
-
+.content1 h1 {
+  font-size: 68px;
+  text-align: center;
+  color: white;
+  font-weight: 800;
+  font-family: var(--font);
+  font-style: normal;
+  padding: 0;
 }
 
-.content1 h3{
-    color: white;
-    font-size: 25px;
-   
-    font-family: var(--font) ;
-    letter-spacing: 1px;
+.content1 h3 {
+  color: white;
+  font-size: 25px;
+
+  font-family: var(--font);
+  letter-spacing: 1px;
 }
 
 .content2 {
-    margin: auto;
-    width: 50vw;
-    height: 15vh;
-    top: 5%;
-    display: flex;
-    justify-content: center;
-    position: inherit;
-    z-index: 10;
-   
+  margin: auto;
+  width: 50vw;
+  height: 15vh;
+  top: 5%;
+  display: flex;
+  justify-content: center;
+  position: inherit;
+  z-index: 10;
 }
-.content2 p{
-    font-family: var(--font);
-    font-size: 22px;
-    font-weight: 200;
-    color: white;
-    letter-spacing: 1px;
-    text-align: center;
-}
-
-.banner {
-    width: 100%;
-    height: 150px; /* Adjust height as needed */
-    background: url('your-image.jpg') no-repeat center;
-    background-size: cover;
-    position: relative;
-    overflow: hidden;
+.content2 p {
+  font-family: var(--font);
+  font-size: 22px;
+  font-weight: 200;
+  color: white;
+  letter-spacing: 1px;
+  text-align: center;
 }
 
-.banner::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 50px; /* Adjust curve depth */
-    background: linear-gradient(to top, #ff0066, transparent);
-    border-radius: 50% 50% 0 0;
+.curve {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+ border: 3px solid rgb(192, 8, 39); /* Adjust curve depth */
+ box-shadow: 5px 5px 10px 15px blue ;
+  
 }
