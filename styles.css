@@ -9,7 +9,10 @@ body {
 :root {
   --font: sans-serif;
   --whitecolor: white;
+ 
 }
+
+
 
 .main {
   height: 90vh;
@@ -138,27 +141,29 @@ nav {
   background: none;
   border: 1px solid grey;
   padding-left: 15vw;
-  padding-top: 4vh;
+  padding-top: 5vh;
   color: rgb(97, 94, 94);
   font-family: var(--font);
   font-size: 22px;
   font-weight: 200;
   border-radius: 4px;
-  
+  margin-right: 10px;
 
 }
 
 .get-started{
   position: inherit;
-  width: 15vw;
-  justify-content: center;
-  align-items: center;
+  width: 18vw;
   border-radius: 4px;
-  background-color: red;
   border: none;
+  background-color: red;
   color: var(--whitecolor);
   font-family: var(--font);
-  font-size: 25px;
-  font-weight: 800;
+  font-size: 35px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-align: center;
+  padding: 15px;
 
 }
+
